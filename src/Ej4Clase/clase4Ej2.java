@@ -71,7 +71,7 @@ public class clase4Ej2 {
 					
 					String codificado=new String(codif);
 					
-					Files.writeString(Paths.get(textoCodificado), codificado);
+					Files.writeString(Paths.get(textoCodificado), codificado+"\n",StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 					System.out.println("El texto fue codificado con exito");
 				}
 			} catch (IOException e) {
