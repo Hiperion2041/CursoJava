@@ -12,7 +12,7 @@ public class clase4Ej2 {
 		// TODO Auto-generated method stub
 
 		clase4Ej2 h= new clase4Ej2();
-		h.sumarDesdeTxT();
+		//h.sumarDesdeTxT();
 		h.codificarTexto();
 		
 	}
