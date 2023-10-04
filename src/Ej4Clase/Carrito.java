@@ -18,11 +18,27 @@ public class Carrito {
 	public double PrecioTotal() {
 		double preciototal=0;
 		for (itemCarrito i:carro) {
-			int cantidad=i.getCantidad();
-			preciototal+=(i.getProducto().getPrecio())*cantidad;
+			preciototal+=(i.getProducto().getPrecio())*i.getCantidad();
 			
 		}
 		return preciototal;
 	}
+	
+	public String toString() {
+		
+		for(itemCarrito i:carro) {
+			return i.getProducto().getNombre()+"\n"+
+					i.getProducto().getPrecio()+"\n"+
+					i.getCantidad();
+			
+		}
+		return "a";
+	}
+
+	public ArrayList<itemCarrito> getCarro() {
+		return carro;
+	}
+
+	
 
 }

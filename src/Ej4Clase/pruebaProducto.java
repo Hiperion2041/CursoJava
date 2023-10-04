@@ -8,8 +8,8 @@ public class pruebaProducto {
 		Producto producto2=new Producto("Goma",50);
 		Producto producto3=new Producto("Carpeta",50);
 		itemCarrito item1=new itemCarrito(producto1,2);
-		itemCarrito item2=new itemCarrito(producto2,1);
-		itemCarrito item3=new itemCarrito(producto3,1);
+		itemCarrito item2=new itemCarrito(producto2,2);
+		itemCarrito item3=new itemCarrito(producto3,2);
 		Carrito carro1=new Carrito();
 		carro1.agregarItem(item1);
 		carro1.agregarItem(item2);

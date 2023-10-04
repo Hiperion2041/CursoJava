@@ -12,6 +12,9 @@ public class itemCarrito {
 			this.cantidad = cantidad;
 			}else System.out.println("Error, la cantidad es mayor a 3");
 	}
+	public itemCarrito() {
+		
+	}
 
 	public Producto getProducto() {
 		return producto;
@@ -26,7 +29,7 @@ public class itemCarrito {
 	}
 
 	public void setCantidad(int cantidad) {
-		if(cantidad<3) {
+		if(cantidad<=3) {
 		this.cantidad = cantidad;
 		}else System.out.println("Error, la cantidad es mayor a 3");
 	}
